@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pavel Trofimuk">
+    <meta name="description" content="Neoflex Test Task">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPICK - корзина</title>
+
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/cart.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav id="index-nav">
+                <a id="logo" href="index.html">QPICK</a>
+                <div class="nav__div">
+                    <a class="icon favorite" href="#">
+                        <div id="favorite-count" class="item-count">2</div>
+                    </a>
+                    <a class="icon cart" href="cart.html">
+                        <div id="cart-count" style="display:none" class="item-count">0</div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Корзина</h2>
+        <section id="order">
+            <div id="total-price">
+                <div>
+                    <p>итого</p>
+                    <p id="total-price__value">total &#x20bd;</p>
+                </div>
+                <button type="submit" id="complete-order">Перейти к оформлению</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <a id="logo" href="index.html">QPICK</a>
+                <div class="footer__column">
+                    <ul>
+                        <li>
+                            <a class="footer__text-link" href="#">Избранное</a>
+                        </li>
+                        <li>
+                            <a class="footer__text-link" href="cart.html">Корзина</a>
+                        </li>
+                        <li>
+                            <a class="footer__text-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__text-link" href="#">Условия сервиса</a>
+                    <div class="footer__languages">
+                        <img class="icon language"></img>
+                        <a class="footer__text-link" href="#">Қаз</a>
+                        <a class="footer__text-link active" href="#">Рус</a>
+                        <a class="footer__text-link" href="#">Eng</a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <ul>
+                        <li>
+                            <a class="icon vk" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="icon telegram" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="icon whatsapp" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../scripts/cart.js"></script>
+</body>
+
+</html>
